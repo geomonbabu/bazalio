@@ -1477,7 +1477,7 @@ responsive
   }
   .about-us .services .item  {
     background: rgb(255,77,30);
-    background: linear-gradient(105deg, rgba(255,77,30,1) 0%, rgba(255,44,109,1) 100%);
+    background: linear-gradient(105deg, #f5b342 0%, #0e6cc3 100%);
     padding: 30px;
     border-radius: 20px;
     display: inline-block;
