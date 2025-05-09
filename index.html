@@ -2,7 +2,16 @@
 <html lang="en">
 
   <head>
-
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+      emailjs.init({
+        publicKey: "sYL4EPSHFB6MwPZ3g",
+      });
+    })();
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -20,13 +29,6 @@
     <link rel="stylesheet" href="assets/css/templatemo-space-dynamic.css">
     <link rel="stylesheet" href="assets/css/animated.css">
     <link rel="stylesheet" href="assets/css/owl.css">
-<!--
-    
-TemplateMo 562 Space Dynamic
-
-https://templatemo.com/tm-562-space-dynamic
-
--->
   </head>
 
 <body>
@@ -349,7 +351,7 @@ https://templatemo.com/tm-562-space-dynamic
           </div>
         </div>
         <div class="col-lg-6 wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.25s">
-          <form id="contact" action="" method="post">
+          <form id="contact">
             <div class="row">
               <div class="col-lg-6">
                 <fieldset>
@@ -358,12 +360,12 @@ https://templatemo.com/tm-562-space-dynamic
               </div>
               <div class="col-lg-6">
                 <fieldset>
-                  <input type="surname" name="surname" id="surname" placeholder="Surname" autocomplete="on" required>
+                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
                 </fieldset>
               </div>
               <div class="col-lg-12">
                 <fieldset>
-                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
+                  <input type="surname" name="surname" id="subject" placeholder="Topic" autocomplete="on" required>
                 </fieldset>
               </div>
               <div class="col-lg-12">
@@ -373,7 +375,7 @@ https://templatemo.com/tm-562-space-dynamic
               </div>
               <div class="col-lg-12">
                 <fieldset>
-                  <button type="submit" id="form-submit" class="main-button ">Send Message</button>
+                  <button type="submit" id="form-submit" onclick="sendMail()" class="main-button ">Send Message</button>
                 </fieldset>
               </div>
             </div>
@@ -404,6 +406,7 @@ https://templatemo.com/tm-562-space-dynamic
   <script src="assets/js/animation.js"></script>
   <script src="assets/js/imagesloaded.js"></script>
   <script src="assets/js/templatemo-custom.js"></script>
+  <script src="assets/js/script.js"></script>
 
 </body>
 </html>
