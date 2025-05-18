@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-    (function(){
+<head>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
       emailjs.init({
         publicKey: "sYL4EPSHFB6MwPZ3g",
       });
     })();
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
 
-    <title>Bazalio Global</title>
-    <link rel="icon" type="image/x-icon" href="assets/images/icon.png">
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <title>Bazalio Global</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/icon.png">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-space-dynamic.css">
-    <link rel="stylesheet" href="assets/css/animated.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-  </head>
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-space-dynamic.css">
+  <link rel="stylesheet" href="assets/css/animated.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+</head>
 
 <body>
 
@@ -63,11 +64,13 @@
               <li class="scroll-to-section"><a href="#about">About Us</a></li>
               <li class="scroll-to-section"><a href="#products">Services</a></li>
               <li class="scroll-to-section"><a href="#portfolio">Portfolio</a></li>
-              <li class="scroll-to-section"><a href="#contact">Message Us</a></li> 
-              <li class="scroll-to-section"><div class="main-red-button"><a href="#contact">Contact Now</a></div></li> 
-            </ul>        
+              <li class="scroll-to-section"><a href="#contact">Message Us</a></li>
+              <li class="scroll-to-section">
+                <div class="main-red-button"><a href="#contact">Contact Now</a></div>
+              </li>
+            </ul>
             <a class='menu-trigger'>
-                <span>Menu</span>
+              <span>Menu</span>
             </a>
             <!-- ***** Menu End ***** -->
           </nav>
@@ -86,7 +89,8 @@
               <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                 <h6>Welcome to Bazalio Global</h6>
                 <h2>We Deliver <em>Your Product</em> &amp; <span> Service</span> <br>into Global Level</h2>
-                <p> Bazalio Global private Limited is an Leading exporting company in india with 1000+ clients all over the world.</p>
+                <p> Bazalio Global private Limited is an Leading exporting company in india with 1000+ clients all over
+                  the world.</p>
               </div>
             </div>
             <div class="col-lg-6">
@@ -173,7 +177,8 @@
         <div class="col-lg-6 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
           <div class="section-heading">
             <h2>Grow your Business with <em>Bazalio</em> We take your product into <br><span>Global</span> Market</h2>
-            <p>We are the company that have markets in various nations and we deliver the products anywhere in the world with fast delivery.</p>
+            <p>We are the company that have markets in various nations and we deliver the products anywhere in the world
+              with fast delivery.</p>
           </div>
           <div class="row">
             <div class="col-lg-12">
@@ -346,7 +351,8 @@
             <h2>Feel Free To Send Us a Message About Your Queries</h2>
             <p>We are here to help and support you for your business.<br>Please fell free to contact us...</p>
             <div class="phone-info">
-              <h4>For any enquiry, Call Us: <span><i class="fa fa-phone"></i> <a href="#">010-020-0340</a></span></h4>
+              <h4>For any enquiry, Call Us: <span><i class="fa fa-phone"></i> <a href="tel:+917892093362">+91 7892093362</a></span></h4>
+              <h4>Or, chat with us on WhatsApp:<span><i class="fa fa-whatsapp"></i><a href="https://wa.me/917892093362" target="_blank">+91 7892093362</a></span></h4>
             </div>
           </div>
         </div>
@@ -355,27 +361,32 @@
             <div class="row">
               <div class="col-lg-6">
                 <fieldset>
-                  <input type="name" name="name" id="name" placeholder="Name" autocomplete="on" required>
+                  <input type="name" name="name" id="name" placeholder="Name" autocomplete="on">
+                  <span id="error-name" class="error-message"></span>
                 </fieldset>
               </div>
               <div class="col-lg-6">
                 <fieldset>
-                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
+                  <input type="text" name="email" id="email" placeholder="Your Email">
+                  <span id="error-email" class="error-message"></span>
                 </fieldset>
               </div>
               <div class="col-lg-12">
                 <fieldset>
-                  <input type="surname" name="surname" id="subject" placeholder="Topic" autocomplete="on" required>
+                  <input type="text" name="subject" id="subject" placeholder="Topic" autocomplete="on">
+                  <span id="error-subject" class="error-message"></span>
                 </fieldset>
               </div>
               <div class="col-lg-12">
                 <fieldset>
-                  <textarea name="message" type="text" class="form-control" id="message" placeholder="Message" required=""></textarea>  
+                  <textarea name="message" type="text" class="form-control" id="message"
+                    placeholder="Message"></textarea>
+                  <span id="error-message" class="error-message"></span>
                 </fieldset>
               </div>
               <div class="col-lg-12">
                 <fieldset>
-                  <button type="submit" id="form-submit" onclick="sendMail()" class="main-button ">Send Message</button>
+                  <button type="submit" id="form-submit" class="main-button ">Send Message</button>
                 </fieldset>
               </div>
             </div>
@@ -392,9 +403,10 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
-          <p>© Copyright 2025 Bazalio Global Private Limited. All Rights Reserved. 
-          
-          <br>Developed by: <a rel="nofollow" href="#">Bazalio global Pvt Ltd</a></p>
+          <p>© Copyright 2025 Bazalio Global Private Limited. All Rights Reserved.
+
+            <br>Developed by: <a rel="nofollow" href="#">Bazalio Global Pvt Ltd</a>
+          </p>
         </div>
       </div>
     </div>
@@ -409,4 +421,67 @@
   <script src="assets/js/script.js"></script>
 
 </body>
+
 </html>
+<script>
+$(document).ready(function () {
+  function validateField(id, message) {
+    const value = $(id).val().trim();
+    const errorId = "#error-" + id.substring(1);
+
+    if (value === "") {
+      $(errorId).text(message);
+      return false;
+    }
+
+    // Email format validation
+    if (id === "#email") {
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(value)) {
+        $(errorId).text("Enter a valid email address.");
+        return false;
+      }
+    }
+
+    $(errorId).text(""); // Clear error if valid
+    return true;
+  }
+
+  // On change validation
+  $("#name, #email, #subject, #message").change(function () {
+    const fieldId = "#" + $(this).attr("id");
+
+    switch (fieldId) {
+      case "#name":
+        validateField(fieldId, "Please Enter Your Name.");
+        break;
+      case "#email":
+        validateField(fieldId, "Please Enter Your EmailId.");
+        break;
+      case "#subject":
+        validateField(fieldId, "Please Enter Your Topic.");
+        break;
+      case "#message":
+        validateField(fieldId, "Please Enter Your Message.");
+        break;
+    }
+  });
+
+  // On submit validation
+  $("#contact").submit(function (e) {
+    e.preventDefault(); // Prevent form submit
+
+    let isValid = true;
+
+    isValid &= validateField("#name", "Please Enter Your Name.");
+    isValid &= validateField("#email", "Please Enter Your EmailId.");
+    isValid &= validateField("#subject", "Please Enter Your Topic.");
+    isValid &= validateField("#message", "Please Enter Your Message.");
+
+    if (isValid) {
+      sendMail(); 
+    }
+  });
+});
+
+</script>
