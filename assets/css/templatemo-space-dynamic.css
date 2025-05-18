@@ -966,6 +966,7 @@ About Us Style
 .about-us .services .item .icon {
   float: left;
   margin-right: 25px;
+  margin-bottom: inherit;
 }
 
 .about-us .services .item .icon img {
