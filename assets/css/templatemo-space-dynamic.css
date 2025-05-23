@@ -210,7 +210,7 @@ body {
 
 .main-red-button a {
   display: inline-block;
-  background-color: #f5b342;
+  background-color: #0e6cc3;
   font-size: 15px;
   font-weight: 400;
   color: #fff;
@@ -387,7 +387,7 @@ header
 
 .header-area .main-nav .nav li:last-child a:hover ,
 .background-header .main-nav .nav li:last-child a:hover {
-  background-color: #0e6cc3;
+  background-color: #f5b342;
 }
 
 .header-area .main-nav .nav li.submenu {
@@ -1159,15 +1159,9 @@ Portfolio
 }
 
 .our-portfolio .showed-content img {
-  max-width: 100px;
+     max-width: 190px;
+    min-height: 160px;
 }
-
-
-/* 
----------------------------------------------
-Blog
---------------------------------------------- 
-*/
 
 .our-blog {
   position: relative;

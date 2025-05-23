@@ -5,5 +5,5 @@ function sendMail(){
         subject : document.getElementById("subject").value,
         message : document.getElementById("message").value,
     };  
-    emailjs.send("service_mqkmw3p", "template_idrryl8", params).then(alert("Your Message has been send Successfully")); 
+    emailjs.send("service_mqkmw3p", "template_idrryl8", params).then(alert("Your Message has been send Successfully")); location.reload();
 }
